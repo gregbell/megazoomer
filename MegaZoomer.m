@@ -56,7 +56,7 @@
     [item setAction:@selector(megaZoom:)];
     [item setTarget:self];
     [item setKeyEquivalent:@"\n"];
-    [item setKeyEquivalentModifierMask:NSCommandKeyMask];
+    [item setKeyEquivalentModifierMask:NSCommandKeyMask|NSControlKeyMask];
     [windowMenu insertItem:item atIndex:[windowMenu indexOfItemWithTarget:nil andAction:@selector(performZoom:)]+1];
 }
 
